@@ -1,0 +1,57 @@
+
+
+1. teszteset:
+    - SINGLE firemode
+    - elsőben van töltény
+    - másodikban van töltény
+    - 2x lövünk
+
+EREDMÉNY: első és második is lő
+
+2. teszteset:
+    - SINGLE firemode
+    - elsőben nincs töltény
+    - másodikban van töltény
+    - első következik
+
+EREDMÉNY: második lő
+
+3. teszteset:
+    - SINGLE firemode
+    - elsőben nincs töltény
+    - másodikban nincs töltény
+
+EREDMÉNY: nem tudunk lőni
+
+4. teszteset:
+    - ALL firemode
+    - elsőben nincs töltény
+    - másodikban nincs töltény
+
+EREDMÉNY: nem tudunk lőni
+
+5. teszteset:
+    - ALL firemode
+    - elsőben nincs töltény
+    - másodikban van töltény
+
+EREDMÉNY: csak a másodikkal lövünk.
+
+NEM FEDETT: az elsődlegessel lőttünk utoljára, megint lőni akarunk
+de a másodikban nincsen töltény, az elsőben pedig van.
+
+6. teszteset:
+    - SINGLE firemode
+    - elsővel van töltény
+    - másodikban nincs töltény
+    - 2x lövünk
+
+EREDMÉNY: az elsővel lövünk 2x
+
+7. teszteset:
+    - SINGLE firemode
+    - elsőben 1 töltény van
+    - másodikban nincs töltény
+    - 2x lövünk
+
+EREDMÉNY: az elsővel lövünk 1x, utána nem tudunk már.
